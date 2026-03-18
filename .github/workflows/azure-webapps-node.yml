@@ -78,5 +78,5 @@ jobs:
         host: ${{ secrets.MY_HOST }}
         username: ${{ secrets.MY_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "dist3/dist/*"        # 要传输的源文件
+        source: "dist3/*"        # 要传输的源文件
         target: "/home/ubuntu/webapp"  # 服务器上的目标目录
