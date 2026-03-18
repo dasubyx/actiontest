@@ -80,3 +80,4 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         source: "dist3/*"        # 要传输的源文件
         target: "/home/ubuntu/webapp"  # 服务器上的目标目录
+        strip_components: 1  # <--- 核心修复：跳过 dist3 这一层目录
